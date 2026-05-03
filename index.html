@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Biyahe Hub — Your journey starts here. Flights, hotels, tours, and travel planning for local and global adventures." />
+  <title>Biyahe Hub | Travel Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-bar">
+      <div class="header-inner">
+        <a href="#home" class="logo" aria-label="Biyahe Hub home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+              <ellipse cx="20" cy="20" rx="8" ry="18" stroke="currentColor" stroke-width="1.5" />
+              <path d="M2 20h36M20 2c4 8 4 28 0 36" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </span>
+          <span class="logo-text">Biyahe <span class="logo-hub">Hub</span></span>
+        </a>
+
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#blog">Travel Blog</a></li>
+          <li><a href="#customer-hub">Customer Hub</a></li>
+          <li><a href="#promos">Promos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home" data-section>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow reveal" data-reveal>
+          <span class="tagline-rotate" id="tagline-rotate">Your Journey Starts Here</span>
+        </p>
+        <h1 class="hero-title reveal" data-reveal style="--delay: 0.08s">Plan Your Next Adventure with Biyahe Hub</h1>
+        <p class="hero-lead reveal" data-reveal style="--delay: 0.14s">Lakbay Lokal, Explore Global — connecting you to trusted flights, stays, and unforgettable tours.</p>
+
+        <div class="quick-search reveal" data-reveal style="--delay: 0.22s">
+          <p class="quick-search-label">Quick search</p>
+          <div class="search-tabs" role="tablist" aria-label="Search type">
+            <button type="button" class="search-tab is-active" role="tab" aria-selected="true" data-tab="flights">Flights</button>
+            <button type="button" class="search-tab" role="tab" aria-selected="false" data-tab="hotels">Hotels</button>
+            <button type="button" class="search-tab" role="tab" aria-selected="false" data-tab="tours">Tours</button>
+          </div>
+          <form class="search-form" id="quick-search-form" action="#" method="get">
+            <label class="visually-hidden" for="search-query">Search</label>
+            <input type="search" id="search-query" name="q" placeholder="Where do you want to go?" autocomplete="off" />
+            <button type="submit" class="btn btn-accent">Search</button>
+          </form>
+          <p class="search-hint" id="search-hint">Find routes and fares tailored to your dates.</p>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Explore</span>
+          <span class="hero-scroll-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-social" data-section>
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <h2>Featured destinations</h2>
+          <p>Handpicked local gems and global highlights — start dreaming, then let us handle the details.</p>
+        </header>
+
+        <div class="featured-grid">
+          <article class="destination-card reveal" data-reveal>
+            <div class="destination-card-media" style="--img: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80')"></div>
+            <div class="destination-card-body">
+              <span class="badge badge-local">Local</span>
+              <h3>Palawan</h3>
+              <p>Lagoons, limestone cliffs, and island-hopping at its finest.</p>
+            </div>
+          </article>
+          <article class="destination-card reveal" data-reveal style="--delay: 0.08s">
+            <div class="destination-card-media" style="--img: url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80')"></div>
+            <div class="destination-card-body">
+              <span class="badge badge-intl">International</span>
+              <h3>Japan</h3>
+              <p>Cherry seasons, cities, and culture — curated itineraries available.</p>
+            </div>
+          </article>
+          <article class="destination-card reveal" data-reveal style="--delay: 0.16s">
+            <div class="destination-card-media" style="--img: url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80')"></div>
+            <div class="destination-card-body">
+              <span class="badge badge-local">Local</span>
+              <h3>Boracay</h3>
+              <p>White sand sunsets and beachfront escapes.</p>
+            </div>
+          </article>
+          <article class="destination-card reveal" data-reveal style="--delay: 0.24s">
+            <div class="destination-card-media" style="--img: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80')"></div>
+            <div class="destination-card-body">
+              <span class="badge badge-intl">International</span>
+              <h3>Europe highlights</h3>
+              <p>Multi-city routes and seasonal tours — ask us for a custom quote.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="promo-strip reveal" data-reveal>
+          <div class="promo-strip-inner">
+            <span class="promo-strip-badge">Promo</span>
+            <p><strong>Early bird summer bundles</strong> — lock rates on select domestic flights &amp; 3D2N hotel combos.</p>
+            <a href="#promos" class="btn btn-ghost-light">View promos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about" data-section>
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <h2>About us</h2>
+          <p>We are your hub for planning — built on trust, adventure, and connection.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-card reveal" data-reveal>
+            <h3>Mission</h3>
+            <p>To make travel simple, accessible, and memorable for everyone.</p>
+          </div>
+          <div class="about-card reveal" data-reveal style="--delay: 0.08s">
+            <h3>Vision</h3>
+            <p>To be the go-to hub for local and global journeys.</p>
+          </div>
+          <div class="about-card reveal" data-reveal style="--delay: 0.16s">
+            <h3>Values</h3>
+            <ul class="values-list">
+              <li><span class="values-dot values-trust"></span> Trust</li>
+              <li><span class="values-dot values-adventure"></span> Adventure</li>
+              <li><span class="values-dot values-connection"></span> Connection</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dev-showcase reveal" data-reveal>
+          <div class="dev-showcase-bg" aria-hidden="true"></div>
+          <div class="dev-showcase-inner">
+            <header class="dev-showcase-head">
+              <p class="dev-eyebrow">Behind the build</p>
+              <h3 class="dev-showcase-title">Meet the developers</h3>
+              <p class="dev-showcase-lead">The team who brought Biyahe Hub to life</p>
+            </header>
+            <div class="dev-cards">
+              <article class="dev-card reveal" data-reveal style="--card-grad: linear-gradient(145deg, #1e5a8e, #3a7ca5, #52b788); --delay: 0.06s">
+                <span class="dev-card-noise" aria-hidden="true"></span>
+                <div class="dev-avatar" aria-hidden="true">PA</div>
+                <h4 class="dev-card-name">Princess Ablir</h4>
+                <p class="dev-card-role">Developer</p>
+                <a href="tel:+639978444656" class="dev-card-tel">
+                  <svg class="dev-tel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                  <span>0997 844 4656</span>
+                </a>
+              </article>
+              <article class="dev-card reveal" data-reveal style="--card-grad: linear-gradient(145deg, #e85d04, #f4a261, #fef3c7); --delay: 0.14s">
+                <span class="dev-card-noise" aria-hidden="true"></span>
+                <div class="dev-avatar dev-avatar--sun" aria-hidden="true">RE</div>
+                <h4 class="dev-card-name">Raiza Mae Elleazar</h4>
+                <p class="dev-card-role">Developer</p>
+                <a href="tel:+639623567645" class="dev-card-tel">
+                  <svg class="dev-tel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                  <span>0962 356 7645</span>
+                </a>
+              </article>
+              <article class="dev-card reveal" data-reveal style="--card-grad: linear-gradient(145deg, #2d6a4f, #52b788, #74c69d); --delay: 0.22s">
+                <span class="dev-card-noise" aria-hidden="true"></span>
+                <div class="dev-avatar dev-avatar--forest" aria-hidden="true">SB</div>
+                <h4 class="dev-card-name">Shaira Mae Brena</h4>
+                <p class="dev-card-role">Developer</p>
+                <a href="tel:+639053730791" class="dev-card-tel">
+                  <svg class="dev-tel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                  <span>0905 373 0791</span>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" data-section>
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <h2>Services</h2>
+          <p>Everything you need under one roof — from tickets to peace of mind.</p>
+        </header>
+        <ul class="services-grid">
+          <li class="service-card reveal" data-reveal>
+            <span class="service-icon" aria-hidden="true">✈</span>
+            <h3>Flight booking</h3>
+            <p>Compare routes and carriers with guidance from our team.</p>
+          </li>
+          <li class="service-card reveal" data-reveal style="--delay: 0.06s">
+            <span class="service-icon" aria-hidden="true">🏨</span>
+            <h3>Hotel reservations</h3>
+            <p>Stays that match your budget, location, and travel style.</p>
+          </li>
+          <li class="service-card reveal" data-reveal style="--delay: 0.12s">
+            <span class="service-icon" aria-hidden="true">🗺</span>
+            <h3>Tour packages</h3>
+            <p>Local &amp; international itineraries — group or private options.</p>
+          </li>
+          <li class="service-card reveal" data-reveal style="--delay: 0.18s">
+            <span class="service-icon" aria-hidden="true">🛡</span>
+            <h3>Travel insurance assistance</h3>
+            <p>Help choosing coverage for medical, trip delay, and baggage.</p>
+          </li>
+          <li class="service-card reveal" data-reveal style="--delay: 0.24s">
+            <span class="service-icon" aria-hidden="true">📋</span>
+            <h3>Visa support</h3>
+            <p>Document checklists and timing tips where applicable.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="destinations" data-section>
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <h2>Destinations</h2>
+          <p>Where do you want to go next? These are some of our travelers’ favorites.</p>
+        </header>
+
+        <div class="dest-split">
+          <div class="dest-block reveal" data-reveal>
+            <h3 class="dest-heading"><span class="dest-pin"></span> Local</h3>
+            <ul class="dest-tags">
+              <li>Palawan</li>
+              <li>Boracay</li>
+              <li>Cebu</li>
+              <li>Baguio</li>
+            </ul>
+          </div>
+          <div class="dest-block reveal" data-reveal style="--delay: 0.1s">
+            <h3 class="dest-heading"><span class="dest-pin dest-pin--intl"></span> International</h3>
+            <ul class="dest-tags">
+              <li>Japan</li>
+              <li>Korea</li>
+              <li>Singapore</li>
+              <li>Europe highlights</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blog" data-section>
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <h2>Travel blog</h2>
+          <p>Tips, guides, and spotlights — scroll through what’s new.</p>
+        </header>
+
+        <div class="blog-grid">
+          <article class="blog-card reveal" data-reveal>
+            <span class="blog-cat">Tips &amp; guides</span>
+            <h3>Budget travel without the stress</h3>
+            <p>Smart packing, off-peak windows, and how to stretch your peso abroad.</p>
+          </article>
+          <article class="blog-card reveal" data-reveal style="--delay: 0.08s">
+            <span class="blog-cat">Family</span>
+            <h3>Family trips that feel like a vacation</h3>
+            <p>Kid-friendly routes, buffer days, and hotels with space to breathe.</p>
+          </article>
+          <article class="blog-card reveal" data-reveal style="--delay: 0.16s">
+            <span class="blog-cat">Solo</span>
+            <h3>Solo adventures, safely</h3>
+            <p>Check-ins, local SIMs, and itineraries that balance freedom with structure.</p>
+          </article>
+          <article class="blog-card reveal" data-reveal style="--delay: 0.24s">
+            <span class="blog-cat">Spotlight</span>
+            <h3>Destination deep dives</h3>
+            <p>Neighborhood notes, must-try food, and seasonal timing.</p>
+          </article>
+          <article class="blog-card reveal" data-reveal style="--delay: 0.32s">
+            <span class="blog-cat">Seasonal</span>
+            <h3>Promos worth watching</h3>
+            <p>Summer beach bundles, Christmas markets, and New Year getaways.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt section--hub" id="customer-hub" data-section>
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <h2>Customer hub</h2>
+          <p>FAQs, a quick contact form, and stories from travelers like you.</p>
+        </header>
+
+        <div class="hub-layout">
+          <div class="hub-col reveal" data-reveal>
+            <h3 class="hub-subtitle">FAQs</h3>
+            <div class="faq-list" id="faq-list">
+              <details class="faq-item">
+                <summary>How do I get a quote?</summary>
+                <p>Send your dates and destination through the <strong>contact form</strong> below — we’ll reply with options.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Do you handle groups?</summary>
+                <p>Yes. Share your headcount and preferred dates; we coordinate flights, hotels, and tours together.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Is travel insurance required?</summary>
+                <p>We strongly recommend it. We’ll walk you through plans that fit your trip.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Visa assistance — what’s included?</summary>
+                <p>We provide checklists, timelines, and document guidance for eligible destinations. Requirements vary by embassy.</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="hub-col reveal" data-reveal style="--delay: 0.1s">
+            <h3 class="hub-subtitle">Contact form</h3>
+            <form class="contact-form" id="contact-form" novalidate>
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" required autocomplete="name" placeholder="Your name" />
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" required autocomplete="email" placeholder="you@email.com" />
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" name="message" rows="4" required placeholder="Tell us about your trip plans"></textarea>
+              <button type="submit" class="btn btn-primary btn-block">Send message</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="testimonials reveal" data-reveal>
+          <h3 class="hub-subtitle hub-subtitle--center">Testimonials</h3>
+          <div class="testimonial-slider" id="testimonial-slider">
+            <blockquote class="testimonial is-active">
+              <p>“Fast replies and a Boracay package that matched our budget. Will book Korea next!”</p>
+              <cite>— Ana R., Cebu</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p>“Hotel + flights bundled saved us time. The team checked visa notes without us chasing.”</p>
+              <cite>— Marco L., Manila</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p>“Solo Japan trip felt less scary with their day-by-day outline and insurance rec.”</p>
+              <cite>— Jess D., Davao</cite>
+            </blockquote>
+            <div class="testimonial-dots" role="tablist" aria-label="Testimonials">
+              <button type="button" class="t-dot is-active" aria-selected="true" aria-label="Slide 1"></button>
+              <button type="button" class="t-dot" aria-selected="false" aria-label="Slide 2"></button>
+              <button type="button" class="t-dot" aria-selected="false" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section promos-section" id="promos" data-section>
+      <div class="container">
+        <header class="section-head reveal" data-reveal>
+          <h2>Promos</h2>
+          <p>Discounted packages and seasonal deals — ask us what’s live today.</p>
+        </header>
+
+        <div class="promo-cards">
+          <article class="promo-card reveal" data-reveal>
+            <span class="promo-season summer">Summer</span>
+            <h3>Island escape bundle</h3>
+            <p>Domestic flights + resort stays — limited slots per week.</p>
+            <a href="#customer-hub" class="btn btn-accent btn-sm">Inquire</a>
+          </article>
+          <article class="promo-card reveal" data-reveal style="--delay: 0.1s">
+            <span class="promo-season christmas">Christmas</span>
+            <h3>Holiday markets &amp; city breaks</h3>
+            <p>Asia &amp; EU highlights — early deposits hold festive rates.</p>
+            <a href="#customer-hub" class="btn btn-accent btn-sm">Inquire</a>
+          </article>
+          <article class="promo-card reveal" data-reveal style="--delay: 0.2s">
+            <span class="promo-season newyear">New Year</span>
+            <h3>Countdown getaways</h3>
+            <p>Beach or city NYE packages — inquire for group tiers.</p>
+            <a href="#customer-hub" class="btn btn-accent btn-sm">Inquire</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text logo-text--footer">Biyahe <span class="logo-hub">Hub</span></span>
+        <p class="footer-tag">Connecting You to the World</p>
+      </div>
+      <div class="footer-links">
+        <a href="#customer-hub">Contact</a>
+        <a href="#promos">Promos</a>
+        <a href="#about">About</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Biyahe Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
